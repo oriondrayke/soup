@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOUP — Self-Hosted Content Commons</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2.5"/>
+                    <path d="M10 16C10 12.686 12.686 10 16 10C19.314 10 22 12.686 22 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                    <circle cx="16" cy="20" r="2" fill="currentColor"/>
+                </svg>
+                <span>SOUP</span>
+            </a>
+            <div class="nav-links">
+                <a href="#lanes">Lanes</a>
+                <a href="#channels">Channels</a>
+                <a href="#demo">Live Demo</a>
+                <a href="#trust">Trust</a>
+                <a href="https://github.com/oriondrayke/soup" class="nav-cta" target="_blank">GitHub</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-badge">
+                <span class="pulse"></span>
+                Prototype Presentation
+            </div>
+            <h1 class="hero-title">
+                <span class="gradient-text">SOUP</span>
+            </h1>
+            <p class="hero-subtitle">Self-Hosted Content Commons</p>
+            <p class="hero-desc">
+                Not a feed. Not an algorithm. A <strong>distribution hub</strong> for knowledge, 
+                tools, and media — organized by <strong>channels</strong>, not profiles. 
+                Video, blog, and file lanes. One kitchen, many dishes.
+            </p>
+            <div class="hero-actions">
+                <a href="#demo" class="btn btn-primary">Explore the Demo</a>
+                <a href="#manifesto" class="btn btn-ghost">Read the Manifesto</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-num">3</span>
+                    <span class="stat-label">Content Lanes</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">∞</span>
+                    <span class="stat-label">Channels Per User</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">1</span>
+                    <span class="stat-label">Self-Hosted Instance</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manifesto / Why -->
+    <section class="manifesto" id="manifesto">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">The Problem</span>
+                <h2>Why SOUP <span class="gradient-text">≠</span> Instagram</h2>
+            </div>
+            <div class="comparison-grid">
+                <div class="comparison-card">
+                    <div class="comparison-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
+                    </div>
+                    <h3>Instagram</h3>
+                    <ul>
+                        <li>Algorithm controls what you see</li>
+                        <li>One profile = one identity</li>
+                        <li>Content disappears in 24 hours</li>
+                        <li>You are the product</li>
+                        <li>No raw file distribution</li>
+                    </ul>
+                </div>
+                <div class="comparison-card comparison-winner">
+                    <div class="comparison-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>SOUP</h3>
+                    <ul>
+                        <li>Chronological + curated channels</li>
+                        <li>One user = many channels</li>
+                        <li>Permanent knowledge archive</li>
+                        <li>You own the infrastructure</li>
+                        <li>Native file lane with integrity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Three Lanes -->
+    <section class="lanes" id="lanes">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Architecture</span>
+                <h2>Three Lanes. <span class="gradient-text">One Commons.</span></h2>
+                <p>Every piece of content lives in its native lane. No forcing video into squares. No burying PDFs in comment threads.</p>
+            </div>
+            <div class="lanes-grid">
+                <div class="lane-card">
+                    <div class="lane-visual video-visual">
+                        <div class="video-preview">
+                            <div class="video-play">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                            <div class="video-timeline">
+                                <div class="video-progress"></div>
+                            </div>
+                            <span class="video-badge">12:34</span>
+                        </div>
+                    </div>
+                    <div class="lane-content">
+                        <span class="lane-num">01</span>
+                        <h3>Video Lane</h3>
+                        <p>Long-form and short-form video with chapter markers, transcript search, and download options. Not stories that vanish. Knowledge that stays.</p>
+                        <div class="lane-features">
+                            <span class="tag">Transcription</span>
+                            <span class="tag">Chapters</span>
+                            <span class="tag">Download</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lane-card">
+                    <div class="lane-visual blog-visual">
+                        <div class="blog-preview">
+                            <div class="blog-line w-80"></div>
+                            <div class="blog-line w-full"></div>
+                            <div class="blog-line w-90"></div>
+                            <div class="blog-line w-60"></div>
+                            <div class="blog-line w-full"></div>
+                            <div class="blog-image-placeholder">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                            </div>
+                            <div class="blog-line w-full"></div>
+                            <div class="blog-line w-70"></div>
+                        </div>
+                    </div>
+                    <div class="lane-content">
+                        <span class="lane-num">02</span>
+                        <h3>Blog Lane</h3>
+                        <p>Long-form writing with inline media embeds, annotation threads, and version history. Fork a post, remix it, attribute the lineage.</p>
+                        <div class="lane-features">
+                            <span class="tag">Annotations</span>
+                            <span class="tag">Forking</span>
+                            <span class="tag">Versions</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lane-card">
+                    <div class="lane-visual file-visual">
+                        <div class="file-preview">
+                            <div class="file-row">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                                <span>field_notes.pdf</span>
+                                <span class="file-hash">a3f2..8e1d</span>
+                            </div>
+                            <div class="file-row">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                                <span>dataset.csv</span>
+                                <span class="file-hash">8c4b..2f91</span>
+                            </div>
+                            <div class="file-row">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                                <span>template.webp</span>
+                                <span class="file-hash">d9e1..4a7c</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lane-content">
+                        <span class="lane-num">03</span>
+                        <h3>File Lane</h3>
+                        <p>Raw asset distribution with SHA-256 integrity checks, virus scanning, and license tagging. Tools, templates, datasets — not just content, but utility.</p>
+                        <div class="lane-features">
+                            <span class="tag">Integrity</span>
+                            <span class="tag">License</span>
+                            <span class="tag">Scan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Channels Section -->
+    <section class="channels" id="channels">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Identity</span>
+                <h2>Channels <span class="gradient-text">≠</span> Profiles</h2>
+                <p>A person is not a brand. A person runs multiple channels. Separate identity from topic.</p>
+            </div>
+            <div class="channels-demo">
+                <div class="user-card">
+                    <div class="user-avatar">E</div>
+                    <div class="user-info">
+                        <strong>Edward</strong>
+                        <span>@edward</span>
+                    </div>
+                </div>
+                <div class="channel-arrows">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+                </div>
+                <div class="channel-list">
+                    <div class="channel-chip">
+                        <span class="channel-color" style="background:#22c55e"></span>
+                        <span>Ishaka Farming</span>
+                        <span class="channel-count">14 posts</span>
+                    </div>
+                    <div class="channel-chip">
+                        <span class="channel-color" style="background:#3b82f6"></span>
+                        <span>Medical Notes</span>
+                        <span class="channel-count">32 posts</span>
+                    </div>
+                    <div class="channel-chip">
+                        <span class="channel-color" style="background:#a855f7"></span>
+                        <span>AI Agent Logs</span>
+                        <span class="channel-count">8 posts</span>
+                    </div>
+                    <div class="channel-chip">
+                        <span class="channel-color" style="background:#f59e0b"></span>
+                        <span>Village Tools</span>
+                        <span class="channel-count">5 posts</span>
+                    </div>
+                </div>
+            </div>
+            <div class="channels-features">
+                <div class="channel-feature">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    <span>Multiple contributors per channel</span>
+                </div>
+                <div class="channel-feature">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
+                    <span>Collections group cross-lane content</span>
+                </div>
+                <div class="channel-feature">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <span>Channel-level privacy and permissions</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Demo -->
+    <section class="demo" id="demo">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Live Prototype</span>
+                <h2>Explore a <span class="gradient-text">Channel</span></h2>
+                <p>This is how SOUP looks in practice. Interactive mockup — no backend yet, just the vision.</p>
+            </div>
+            
+            <div class="demo-browser">
+                <div class="browser-header">
+                    <div class="browser-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="browser-url">soup.local/c/ishaka-farming</div>
+                </div>
+                <div class="demo-app">
+                    <div class="demo-sidebar">
+                        <div class="demo-logo">
+                            <svg width="20" height="20" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="16" cy="16" r="14"/><path d="M10 16C10 12.686 12.686 10 16 10C19.314 10 22 12.686 22 16"/></svg>
+                            <span>SOUP</span>
+                        </div>
+                        <nav class="demo-nav">
+                            <a class="active"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Home</a>
+                            <a><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg> Video</a>
+                            <a><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg> Blog</a>
+                            <a><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Files</a>
+                        </nav>
+                    </div>
+                    <div class="demo-main">
+                        <div class="demo-channel-header">
+                            <div class="demo-channel-avatar" style="background:linear-gradient(135deg,#22c55e,#16a34a)">IF</div>
+                            <div class="demo-channel-meta">
+                                <h3>Ishaka Farming <span class="verified">✓</span></h3>
+                                <p>Practical agriculture for Western Uganda. Tools, seasons, yields.</p>
+                                <div class="demo-channel-stats">
+                                    <span>14 posts</span>
+                                    <span>3 collections</span>
+                                    <span>2 contributors</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="demo-tabs">
+                            <button class="active" data-tab="all">All</button>
+                            <button data-tab="video">Video</button>
+                            <button data-tab="blog">Blog</button>
+                            <button data-tab="file">Files</button>
+                        </div>
+                        <div class="demo-feed" id="demo-feed">
+                            <!-- Content injected via JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust -->
+    <section class="trust" id="trust">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Trust Model</span>
+                <h2>Trust Is <span class="gradient-text">Everything</span></h2>
+                <p>A file-sharing platform lives or dies on integrity. These are non-negotiable.</p>
+            </div>
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <div class="trust-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Integrity Hashes</h3>
+                    <p>Every file displays its SHA-256 checksum. Download, verify, trust. No tampered PDFs or infected executables slipping through.</p>
+                    <code class="trust-code">sha256: a3f2..8e1d</code>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                    </div>
+                    <h3>Quarantine Scan</h3>
+                    <p>Unknown files sit in quarantine until scanned. No auto-execution. No silent downloads. Manual approval for new uploaders.</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    </div>
+                    <h3>No Private Messages</h3>
+                    <p>Public channels only. No DM vector for harassment or phishing. If you need to talk, fork a post and reply in the open.</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                    <h3>No Algorithm</h3>
+                    <p>Chronological order. Channel subscriptions. Search by tag and license. What you follow is what you see. Full stop.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="stack">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Infrastructure</span>
+                <h2>Self-Hosted. <span class="gradient-text">Village-Ready.</span></h2>
+            </div>
+            <div class="stack-diagram">
+                <div class="stack-layer">
+                    <span class="stack-label">Storage</span>
+                    <span class="stack-item">DigitalOcean Spaces / R2</span>
+                </div>
+                <div class="stack-arrow">↓</div>
+                <div class="stack-layer">
+                    <span class="stack-label">API</span>
+                    <span class="stack-item">Node.js + Express / Next.js API</span>
+                </div>
+                <div class="stack-arrow">↓</div>
+                <div class="stack-layer">
+                    <span class="stack-label">Database</span>
+                    <span class="stack-item">PostgreSQL (shared with Huduma Yangu)</span>
+                </div>
+                <div class="stack-arrow">↓</div>
+                <div class="stack-layer">
+                    <span class="stack-label">Auth</span>
+                    <span class="stack-item">Name + 4-digit OTP (same kitchen)</span>
+                </div>
+                <div class="stack-arrow">↓</div>
+                <div class="stack-layer">
+                    <span class="stack-label">Frontend</span>
+                    <span class="stack-item">Next.js 16 + Nginx reverse proxy</span>
+                </div>
+            </div>
+            <p class="stack-note">One kitchen, many dishes. Clara-bot already runs the stack. SOUP just adds another room to the house.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2.5"/>
+                        <path d="M10 16C10 12.686 12.686 10 16 10C19.314 10 22 12.686 22 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                        <circle cx="16" cy="20" r="2" fill="currentColor"/>
+                    </svg>
+                    <span>SOUP</span>
+                </div>
+                <p class="footer-desc">Self-hosted content commons for knowledge, tools, and media. Built with trust, not algorithms.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>Prototype by <a href="https://github.com/oriondrayke" target="_blank">@oriondrayke</a> · Ishaka, Uganda</p>
+                <p>Not optimistic. Just real.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
